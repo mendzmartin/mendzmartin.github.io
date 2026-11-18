@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Martin Mendez">
+<meta name="dcterms.date" content="2025-10-25">
+
+<title>Biomímesis: aprender observando la naturaleza.</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="main_files/libs/clipboard/clipboard.min.js"></script>
+<script src="main_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="main_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="main_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="main_files/libs/quarto-html/popper.min.js"></script>
+<script src="main_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="main_files/libs/quarto-html/anchor.min.js"></script>
+<link href="main_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="main_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="main_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="main_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="main_files/libs/bootstrap/bootstrap-2fb2079fdf45558e05f561bd2bd75c24.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="main.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Biomímesis: aprender observando la naturaleza.</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Martin Mendez <a href="mailto:martinmendez@unc.edu.ar" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Facultad de Matemática, Astronomía, Física y Computación, Universidad Nacional de Córdoba and Instituto de Física Enrique Gaviola, CONICET-UNC, Ciudad Universitaria, Córdoba X5000HUA, Argentina
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">October 25, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introducción" class="level1">
+<h1>Introducción</h1>
+<section id="historia-y-definición" class="level2">
+<h2 class="anchored" data-anchor-id="historia-y-definición">Historia y definición</h2>
+<p>El filósofo griego Aristóteles decía que para lograr sus fines, el arte imita a la naturaleza. Hoy, no sólo los artistas, sino grupos de ingenieros, físicos, médicos, biólogos y otros científicos están diseñando y construyendo artefactos capaces de replicar las formas y funciones naturales de los organismos. Los propósitos, más que estéticos, son prácticos: aprender cómo la naturaleza, a través de miles de millones de años de evolución, ha generado soluciones que permiten a los seres vivos adaptarse a su entorno y sobrevivir, para luego aplicar esas estrategias en beneficio del ser humano. El concepto de <strong>biomimicry</strong> (<strong>biomimética</strong> o <strong>biomímesis</strong>) tiene sus raíces en la observación de la naturaleza como fuente de soluciones eficientes y sostenibles a problemas complejos, inspirando innovaciones tecnológicas. Históricamente, el interés humano por imitar la naturaleza se remonta a tiempos antiguos, con ejemplos clásicos como el uso de la seda proveniente de gusanos de seda desde el 4000 a.C. (ver Fig. @ref(fig:silks)) y la invención del paraguas en China hace unos 1700 años, inspirado en las hojas de loto para protegerse de la lluvia (ver Fig. @ref(fig:lotus)).</p>
+<div id="fig:silks">
+<p><img src="../figs/silks.jpg" class="img-fluid" style="width:45.0%" alt="La seda es uno de los primeros ejemplos de biomímesis que se encuentran en la historia humana."> La seda es uno de los primeros ejemplos de biomímesis que se encuentran en la historia humana. El uso de este material se remonta al año 4000 a.C., convirtiéndolo en una de las primeras telas inventadas por el ser humano. Es bien sabido que la seda proviene de los gusanos de seda, y los chinos fueron la primera civilización en aprender de este increíble gusano. Esta invención fue la razón por la cual la Ruta de la Seda recibió su nombre. Durante la época en la que solo los chinos habían dominado la técnica del tejido, la seda podía ser intercambiada por su peso equivalente en oro. Seis mil años después, todavía seguimos usando seda en todo el mundo.</p>
+</div>
+<div id="fig:lotus">
+<p><img src="../figs/lotus.jpg" class="img-fluid" style="width:45.0%" alt="Los primeros paraguas chinos fueron inventados hace 1700 años por un hombre llamado Lu Ban."> Los primeros paraguas chinos fueron inventados hace 1700 años por un hombre llamado Lu Ban, quien ahora es venerado en la historia china. La idea del paraguas surgió cuando Lu Ban vio a niños usando hojas de loto para protegerse de la lluvia. Decidió imitar la flexibilidad y efectividad de la hoja para crear un producto propio. Los primeros paraguas fueron, de hecho, hechos de seda.</p>
+</div>
+<p>El término biomímesis (del griego <em>bios</em>, vida y <em>mímesis</em>, imitación) fue utilizado formalmente por primera vez en 1957 por el Otto Schmidt en el contexto de transferir teorías biológicas a soluciones tecnológicas y luego popularizado por Janine Benyus, quien en 1997 definió la biomimética como una ciencia nueva que estudia los modelos de la naturaleza para inspirar soluciones a problemas humanos. Existen muchas definiciones de qué es la biomímesis; en particular, mostramos la siguiente propuesta por Hwang y colaboradores <span class="citation" data-cites="Hwang2015">(<a href="#ref-Hwang2015" role="doc-biblioref">Hwang et al. 2015</a>)</span>:</p>
+<blockquote class="blockquote">
+<p>La biomimética es el estudio de la naturaleza y los fenómenos naturales para comprender los principios de los mecanismos subyacentes, obtener ideas de la naturaleza y aplicar conceptos que puedan beneficiar a la ciencia, la ingeniería y la medicina.</p>
+</blockquote>
+</section>
+<section id="concepto" class="level2">
+<h2 class="anchored" data-anchor-id="concepto">Concepto</h2>
+<p>Para entender el concepto detrás de la biomímesis es útil recordar las nueve leyes, estrategias o principios en que se basa la naturaleza según Janine Benyus <span class="citation" data-cites="Benyus2012">(<a href="#ref-Benyus2012" role="doc-biblioref">Benyus and Leal 2012</a>)</span>.</p>
+<blockquote class="blockquote">
+<p>La naturaleza…</p>
+<ol type="1">
+<li>… funciona con la luz del sol.</li>
+<li>… sólo usa la energía que necesita.</li>
+<li>… adapta la forma a la función.</li>
+<li>… lo recicla todo.</li>
+<li>… recompensa la cooperación.</li>
+<li>… se apoya en la diversidad.</li>
+<li>… exige conocimientos técnicos locales.</li>
+<li>… frena los excesos desde el interior.</li>
+<li>… optimiza.</li>
+</ol>
+</blockquote>
+<p>Antonio Gaudí (1852-1926) decía que: &gt; El arquitecto del futuro se basará en la imitación de la naturaleza, porque es la forma más racional, duradera y económica de todos los métodos. La arquitectura biomimética busca soluciones sostenibles en la naturaleza, no a través de la réplica de sus formas, sino a través de la comprensión de las normas y principios que las rigen. Se trataría por tanto, de imitar no solo la forma, sino también el funcionamiento. Gaudí expresaba la importancia de la biomimética: &gt; Originalidad quiere decir volver al origen y el origen es la naturaleza y las leyes que la rigen.</p>
+<p>Janine Benyus afirma que <span class="citation" data-cites="Mirat2018">(<a href="#ref-Mirat2018" role="doc-biblioref">Mirat, Frutos, and Argilés 2018</a>)</span>: &gt; El primer nivel es imitar la forma natural. Pero se puede acceder a un segundo nivel, que es cuando se imita el proceso natural.</p>
+</section>
+<section id="la-biomímesis-como-filosofía-de-vida" class="level2">
+<h2 class="anchored" data-anchor-id="la-biomímesis-como-filosofía-de-vida">La biomímesis como filosofía de vida</h2>
+<p>La biomímesis estudia en profundidad el comportamiento de la naturaleza en todos sus estadios, escalas de relación y desarrollo en el ámbito de la biosfera y busca entender su lenguaje para mejorar nuestro conocimiento. El objetivo es crear una cultura que nos permita establecer nuevos procesos más ecológicos y sostenibles, así como productos y estrategias para establecer formas de progreso que estén en equilibrio con la integridad del planeta. La biomímesis es una ciencia basada en la observación de nuestro planeta y de su larga evolución durante sus 3.800 millones de años de historia. Las moléculas orgánicas de los organismos biológicos de microbios, animales, plantas y hongos y de sus asociaciones han establecido estrategias de supervivencia capaces de subsistir gracias a la optimización del uso de recursos, de su organización y funcionamiento y, de adaptar su forma a su función.</p>
+<p>Janine Benyus decía que: &gt; La naturaleza ya ha resuelto todos los retos a los que hoy nos enfrentamos y, sus fracasos se han convertido en fósiles, y lo que nos rodea es la clave de la supervivencia. Existen tres elementos esenciales en la ciencia de la biomímesis que son <strong>emular</strong>, <strong>ethos</strong> y <strong>(re)conectar</strong> y representan los valores fundamentales en los que se basa la biomímesis y que pretende transmitir en todas sus acciones y prácticas.</p>
+<ul>
+<li><strong>Emular</strong>: La experiencia científica basada en la investigación de aprender y luego replicar las formas, procesos y ecosistemas de la naturaleza para crear diseños más regenerativos.</li>
+<li><strong>Ethos</strong>: La filosofía de comprender cómo funciona la naturaleza y crear diseños que apoyen y creen continuamente resultados propicios para la vida.</li>
+<li><strong>(Re) Conectar</strong>: El concepto de que todos somos parte de la naturaleza y encontramos valor en el reconocimiento de los sistemas interconectados de la vida. (Re Conectar como práctica nos anima a observar y pasar tiempo en la naturaleza, a comprender cómo estamos profundamente conectados con ella, a experimentar nuestra interdependencia y a apreciar cómo funciona la vida y sus estrategias biológicas.</li>
+</ul>
+<div id="fig:pulpo_molusco_cefalopodo">
+<p><img src="../figs/pulpo_molusco_cefalopodo.png" class="img-fluid" style="width:45.0%" alt="La evolución anatómica de los pulpos (molusco cefalópodo) es un milagro de la naturaleza."> La evolución anatómica de los pulpos (molusco cefalópodo) con su cuerpo musculoso y flexible de 8 brazos tentaculados, cerebro prodigioso y un sistema ocular de los más evolucionados del reino animal, es un milagro de la naturaleza y de la adaptación al medio marino. La biomimética estudia la forma y funcionamiento de sus ventosas para aplicaciones médicas e industriales, así como el sistema de visión para la aplicación en tecnología marina e invidentes. Foto: Miquel Ventura Monsó — Proyecto Silmar — Fundación RAED.</p>
+</div>
+<div id="fig:gusano_poliqueto">
+<p><img src="../figs/gusano_poliqueto.png" class="img-fluid" style="width:45.0%" alt="El gusano poliqueto de la especie Spirographis spallanzani ha evolucionado hasta adquirir un diseño corporal y fisiológico."> El gusano poliqueto de la especie <em>Spirográphis spallanzani</em> ha evolucionado hasta adquirir un diseño corporal y fisiológico que le permite, gracias a la modificación de sus apéndices, desarrollar un abanico en forma de plumero para captar el oxígeno del agua y a su vez alimentarse de las partículas en suspensión que transporta el agua marina. Foto: Miquel Ventura Monsó – proyecto Silmar – Fundación RAED.</p>
+</div>
+</section>
+</section>
+<section id="personas-relevantes" class="level1">
+<h1>Personas relevantes</h1>
+<p>Uno de los pioneros en el pensamiento biomimético fue <strong>Leonardo da Vinci</strong> (1452-1519), quien estudió y replicó mecanismos naturales como el vuelo de las aves para diseñar máquinas voladoras, sentando bases para la biónica (ver Fig. @ref(fig:flying_machine_davinci)).</p>
+<div id="fig:flying_machine_davinci">
+<p><img src="../figs/flying_machine_davinci.jpg" class="img-fluid" style="width:45.0%" alt="Leonardo da Vinci’s design for a flying machine with wings based closely upon the structure of bat wings."> Leonardo da Vinci’s design for a flying machine with wings based closely upon the structure of bat wings.</p>
+</div>
+<p>El arquitecto catalán <strong>Antonio Gaudí</strong> (1852-1926), pionero en la aplicación intuitiva de principios biomiméticos, concibió la estructura de la Sagrada Familia en Barcelona como un gran bosque pétreo. Lejos de ser meros elementos decorativos, las columnas que se ramifican como troncos de árboles, las bóvedas que recuerdan hojas, y las espirales inspiradas en caracoles fueron diseñadas con una profunda intención estructural y funcional. Esta aproximación orgánica permite una distribución óptima de las cargas gravitatorias hacia el suelo, imitando la eficiencia de los sistemas naturales. Asimismo, estas formas, probadas durante más de un siglo contra la tramontana y las inclemencias del clima mediterráneo, confieren al edificio una excepcional resistencia y estabilidad frente a las fuerzas del viento. La obra de Gaudí es, por tanto, un testimonio temprano y monumental de cómo la mimesis de las formas y estrategias de la naturaleza puede generar estructuras no solo estéticamente sorprendentes, sino también extraordinariamente eficientes y resilientes (ver Fig. @ref(fig:sagrada_familia)) <span class="citation" data-cites="Anous2015">(<a href="#ref-Anous2015" role="doc-biblioref">Anous 2015</a>)</span>.</p>
+<div id="fig:sagrada_familia">
+<p><img src="../figs/sagrada_familia.jpeg" class="img-fluid" style="width:45.0%" alt="La Sagrada Familia aún en construcción."> La Sagrada Familia aún en construcción.</p>
+</div>
+<p>El biofísico <strong>Otto H. Schmitt</strong> (1913-1998) acuñó el término “<strong>biomimética</strong>” en la década de 1950 para describir la transferencia de ideas de la biología a la tecnología. Su trabajo se centró en transferir fenómenos biológicos, como la transmisión de señales en nervios, a aplicaciones de ingeniería electrónica, como el disparador de Schmitt. <strong>George de Mestral</strong> (1907-1990), aunque fue un inventor, su descubrimiento más famoso es el caso de éxito de biomímesis por excelencia: el <strong>Velcro</strong> (ver Fig. @ref(fig:velcro)). Inspirado por los ganchos de los frutos del cardo alpino (<em>Arctium</em>), democratizó el concepto de que la naturaleza ofrece soluciones elegantes a problemas simples.</p>
+<div id="fig:velcro">
+<p><img src="../figs/velcro.png" class="img-fluid" style="width:45.0%" alt="Invención del Velcro inspirada en los cadillos del cardo alpino."> Mientras cazaba en los Alpes suizos con su perro, George de Mestral notó que los cadillos (o ``abrojos’’) del bosque se pegaban a su ropa y al pelaje de su perro. Aunque era un inconveniente, él lo vio como una oportunidad. Tras examinar los cadillos más de cerca, observó que su superficie estaba compuesta por muchos ganchos diminutos. Estos se adhieren a las cosas enredando estos ganchos en la estructura suelta de superficies como la tela o la piel animal. Inventó el Velcro imitando esta superficie cubierta de pequeños ganchos y combinándola con una superficie cubierta de pequeños bucles, dando como resultado el producto útil que conocemos hoy en día.</p>
+</div>
+<p><strong>Claus Mattheck</strong> (1947-presente) es un gigante en el campo de la biónica estructural. Desarrolló el “método de optimización de la tensión superficial” y demostró cómo los árboles optimizan su forma para soportar cargas, principios que luego aplicó para diseñar componentes más ligeros y resistentes en la industria automotriz y aeroespacial. <strong>Janine Benyus</strong> (1958) en 1997 es conocida como la fundadora del movimiento de biomímesis. Ella recogió todas sus teorías en un libro llamado “Biomimesis: innovaciones inspiradas por la naturaleza” <span class="citation" data-cites="Benyus2012">(<a href="#ref-Benyus2012" role="doc-biblioref">Benyus and Leal 2012</a>)</span> (ver Fig. @ref(fig:janine_benyus_book)). En 1998, Janine Benyus y Dayna Baumeister fundaron la biomímesis, que utiliza un profundo conocimiento de la adaptación biológica de los organismos para ayudar a los diseñadores, ingenieros y arquitectos a resolver problemas de diseño e ingeniería de manera sostenible. En 2008, se desarrolla el “portal de biomímesis”, que es la primera base de datos digital para organismos biológicos que tienen estrategias para resolver problemas acordes con la comunidad humanitaria <span class="citation" data-cites="Anous2015">(<a href="#ref-Anous2015" role="doc-biblioref">Anous 2015</a>)</span>. En 2005, Bryony Schan y Janine Benyus cofundaron el <a href="https://biomimicry.org/">Instituto de Biomímesis</a>, en 2007 Chris Allen se unió a Beynus y Schwan para lanzar <a href="https://asknature.org/">“AskNature”</a>, primera biblioteca digital del mundo que contiene una lista de soluciones naturales donde los diseñadores pueden buscar a través de esta colección de sistemas naturales, clasificados según su diseño e ingeniería <span class="citation" data-cites="Radwan2016">(<a href="#ref-Radwan2016" role="doc-biblioref">Radwan and Osama 2016</a>)</span>. Janine Benyus está considerada como una de las personas clave responsables de desarrollar el campo de la biomimética en un área más reconocida y distinguida hoy en día. Fundó su propia organización de consultoría líder en el mundo, Biomimética 3.8. Su misión es enseñar al mundo a innovar, aprender e inspirarse en la naturaleza. Ella continúa esforzándose por un futuro que escuche a la tierra en lugar de explotarla. Ella enmarca el concepto de biomimética en torno al urgente objetivo de acabar con la destrucción del medio ambiente. Dijo en el National Geographic, “Ojalá hubiéramos estado en la mesa de diseño de la Revolución Industrial”.</p>
+<div id="fig:janine_benyus_book">
+<p><img src="../figs/janine_benyus_book.jpg" class="img-fluid" style="width:20.0%" alt="Portada del libro Biomímesis de Janine Benyus."> Portada del libro escrito por Janine Benyus “Biomímesis. Innovaciones inspiradas por la naturaleza” <span class="citation" data-cites="Benyus2012">(<a href="#ref-Benyus2012" role="doc-biblioref">Benyus and Leal 2012</a>)</span>.</p>
+</div>
+<p>En sus inicios, Baumeister y Benyus se plantearon la cuestión fundamental de cómo sentar las bases de una disciplina emergente: por dónde empezar y cómo construir las instituciones necesarias. Llegaron a la conclusión de que el objetivo último era canalizar la sabiduría de la naturaleza e integrarla en el ámbito del diseño de sistemas humanos, abarcando la ingeniería, la medicina, la política, el arte, entre otros. Para ello, era crucial crear un marco de trabajo que conectara de manera eficaz las soluciones desarrolladas por la naturaleza con los desafíos humanos. La genialidad de su propuesta fue simplificar este proceso en una pregunta esencial: “¿Cómo lo resolvería la naturaleza?” (<em>What would nature do?</em>). Sin embargo, para que esta pregunta fuera útil, debía tener una respuesta accesible. Así nació <a href="https://asknature.org/">AskNature</a>. La paradoja que impulsó este proyecto es la siguiente: los profesionales que diseñan nuestro mundo (ingenieros, arquitectos, diseñadores) rara vez reciben formación en biología. Sin embargo, son ellos quienes crean las tecnologías y soluciones que moldean nuestra existencia. Por ejemplo, un ingeniero puede diseñar una bomba hidráulica compleja para un motor de combustión, sin conocer que la naturaleza ha perfeccionado un sistema de bombeo extraordinariamente eficiente en el corazón de una ballena, capaz de mover sangre a través de una vasta red de vasos. Los biólogos conocen estos sistemas, pero su conocimiento no suele llegar a los creadores. AskNature surge precisamente para tender un puente entre estos dos saberes, conectando la expertise biológica con la ingenieril en el momento mismo de la creación.</p>
+</section>
+<section id="ejemplos-destacados" class="level1">
+<h1>Ejemplos destacados</h1>
+<section id="matemática" class="level2">
+<h2 class="anchored" data-anchor-id="matemática">Matemática</h2>
+<section id="grafos" class="level3">
+<h3 class="anchored" data-anchor-id="grafos">Grafos</h3>
+<p>En el 2012 se publicó un trabajo científico (ver Ref. <span class="citation" data-cites="Hernandez2012">(<a href="#ref-Hernandez2012" role="doc-biblioref">Hernández and Blum 2012</a>)</span>) que se inspira en el comportamiento natural de los machos de la rana arborícola japonesa (<em>Hyla japonica</em>, ver Fig. @ref(fig:japanese_tree_frog)), que emiten sus cantos para atraer a las hembras. Cuando varios machos están cerca y cantan simultáneamente, las hembras no pueden distinguir de dónde provienen las llamadas, lo que dificulta la elección del compañero. Para solucionar esto, los machos desincronizan sus cantos, es decir, ajustan los intervalos temporales de sus llamados para que no se superpongan, facilitando que las hembras localicen individualmente a cada macho. Este fenómeno natural de desincronización se ha modelado matemáticamente mediante sistemas de osciladores acoplados, donde cada macho se representa como un nodo en un grafo, y las conexiones entre nodos reflejan la posibilidad de confusión entre cantos debido a la proximidad. El algoritmo desarrollado usa esta idea de desincronización para resolver el problema del coloreado distribuido de grafos, que consiste en asignar colores a nodos conectados de modo que nodos vecinos tengan colores diferentes. Cada fase de canto corresponde a un color, y al desincronizarse, los nodos logran minimizar el número de colores usados sin que se superpongan, equivalente a permitir conexiones inalámbricas sin interferencias o gestionar tareas en redes distribuidas sin coordinación central. Este algoritmo bioinspirado es distribuido, lo que significa que cada nodo usa solo información local para decidir su color, imitando cómo los machos ranas ajustan sus cantos sin un controlador central. El método ha mostrado resultados competitivos para diversos tipos de grafos, siendo útil en aplicaciones concretas como asignación de frecuencias en redes inalámbricas, planificación de horarios o análisis de redes sociales para detectar comunidades independientes. En resumen, el estudio aprovecha la autoorganización natural de la desincronización en los cantos de las ranas arborícolas japonesas para diseñar un algoritmo eficiente y distribuido que soluciona combinatoriamente problemas complejos de coloreado en grafos, con amplias aplicaciones tecnológicas y computacionales.</p>
+<div id="fig:japanese_tree_frog">
+<p><img src="../figs/japanese_tree_frog.png" class="img-fluid" style="width:45.0%" alt="Rana macho japonesa (Dryophytes japonicus)."> Durante los rituales de cortejo, las ranas macho japonesas (<em>Dryophytes japonicus</em>) atraen la atención de las hembras croando rítmicamente. Los machos vecinos tienden a alternar sus croaking (con una diferencia de fase) para evitar “hablar unos sobre otros” e interferir acústicamente.</p>
+</div>
+</section>
+</section>
+<section id="física" class="level2">
+<h2 class="anchored" data-anchor-id="física">Física</h2>
+<section id="fotosíntesis" class="level3">
+<h3 class="anchored" data-anchor-id="fotosíntesis">Fotosíntesis</h3>
+<p>El trabajo de Ruban, Johnson y Duffy (2011) <span class="citation" data-cites="Ruban2011">(<a href="#ref-Ruban2011" role="doc-biblioref">Ruban, Johnson, and Duffy 2011</a>)</span> nos ofrece un ejemplo paradigmático de eficiencia energética inspirada por la naturaleza. Su estudio detallado de la antena del <strong>fotosistema II</strong> en plantas revela un sistema de captura de luz con una eficiencia cuántica casi perfecta (80-100%), un estándar asombroso que cualquier tecnología humana aspira alcanzar. Esta prodigiosa eficiencia no es casual, sino que emerge de un diseño molecular exquisito. Los pigmentos y proteínas se organizan formando lo que los autores describen como un “<strong>solvente programado</strong>”, que logra empacar una alta densidad de pigmentos sin que estos se “apaguen” entre sí. Esto se consigue gracias a orientaciones y acoplamientos precisos que prolongan la vida del estado excitado. El sistema es, además, dinámicamente inteligente. Pigmentos accesorios, las xantofilas, actúan como reguladores en tiempo real, modulando la eficiencia energética para proteger el sistema y adaptarse a las condiciones de luz. Incluso exhibe una suerte de “<strong>memoria lumínica</strong>”, con un comportamiento histérico similar al de materiales ferroeléctricos, lo que le permite “recordar” exposiciones previas. Como modelo biomimético, este sistema biológico es una lección magistral de integración de fenómenos cuánticos, bioquímicos y físicos para lograr una función robusta y autoregulada. Sus principios—optimización del diseño, regulación adaptativa y explotación de efectos cuánticos—ofrecen un <em>blueprint</em> revolucionario para el diseño de nuevos materiales fotónicos, células solares orgánicas y sistemas de gestión de energía artificiales mucho más eficientes.</p>
+</section>
+</section>
+<section id="ingeniería" class="level2">
+<h2 class="anchored" data-anchor-id="ingeniería">Ingeniería</h2>
+<section id="adhesivo" class="level3">
+<h3 class="anchored" data-anchor-id="adhesivo">Adhesivo</h3>
+<p>Los científicos de la Universidad de Manchester han desarrollado un nuevo tipo de adhesivo que imita el mecanismo empleado por el lagarto <strong>gecko</strong> (ver Fig. @ref(fig:gecko_renee)) para adherirse a superficies e incluso caminar por techos de cristal. Este innovador material, a menudo llamado cinta de gecko, está compuesto por miles de millones de pequeñas fibras de plástico de menos de una micra de diámetro. Estas fibras sintéticas son análogas a los pelos microscópicos (<em>setae</em>) que recubren las plantas de los pies del gecko, los cuales generan fuerzas de adhesión electrodinámicas (fuerzas de van der Waals) a nivel molecular. Sorprendentemente, un centímetro cuadrado de esta cinta es capaz de soportar un peso de hasta un kilogramo. Más allá de sus aplicaciones como adhesivo general, este material puede ser utilizado para manipular chips de computadora en entornos de vacío o para recolectar muestras de pequeñas fibras sin dañarlas. Otra de sus ventajas significativas es que la cinta es reutilizable y no requiere de los productos químicos tóxicos presentes en los adhesivos convencionales <span class="citation" data-cites="Hargroves2006">(<a href="#ref-Hargroves2006" role="doc-biblioref">Hargroves and Smith 2006</a>)</span>.</p>
+<div id="fig:gecko_renee">
+<p><img src="../figs/gecko_renee.png" class="img-fluid" style="width:45.0%" alt="Ingenieros y estudiantes de la Universidad de Massachusetts estudiaron las almohadillas de las patas de los geckos."> Ingenieros y estudiantes de la Universidad de Massachusetts estudiaron las almohadillas de las patas de los geckos y descubrieron que la razón por la que estos reptiles pueden arrastrarse por superficies verticales e incluso invertidas se debe a que sus pies están cubiertos por cientos de <em>setae</em>, es decir, fibras microscópicas similares a pelos. Estas fibras permiten al gecko adherirse a una superficie, pero también despegarse de ella con facilidad. El resultado de esta investigación fue el desarrollo de una sustancia adhesiva que, como era de esperar, se utiliza para adherir objetos a paredes y superficies de manera más eficiente.</p>
+</div>
+</section>
+<section id="ondas-de-choque" class="level3">
+<h3 class="anchored" data-anchor-id="ondas-de-choque">Ondas de choque</h3>
+<p>Para resolver el problema de los cambios bruscos de resistencia del aire y el estruendo sónico que generaban los trenes <strong>Shinkansen</strong> al entrar en los túneles, el equipo de diseño se inspiró en la naturaleza. Encontraron la solución perfecta en el pico del <strong>martín pescador</strong> (<em>Alcedo atthis</em>), evolucionado para bucear desde el aire al agua, es decir, de un medio de baja densidad a uno de alta densidad, con una pérdida mínima de energía y sin salpicadura. Mediante modelado por computadora, los ingenieros confirmaron que la forma aerodinámica única del pico del ave era la más idónea para el morro del tren. El resultado fue extraordinario: no solo se eliminó casi por completo el ruido de la onda de choque en los túneles, sino que, además, el tren pudo circular un 10% más rápido consumiendo un 15% menos de electricidad. Este caso es un paradigma de cómo la biomímesis puede optimizar múltiples parámetros de rendimiento de manera simultánea e inteligente (ver Fig. @ref(fig:kingfisher_inspired_bullet_train)) <span class="citation" data-cites="Hargroves2006">(<a href="#ref-Hargroves2006" role="doc-biblioref">Hargroves and Smith 2006</a>)</span>.</p>
+<div id="fig:kingfisher_inspired_bullet_train">
+<p><img src="../figs/kingfisher_inspired_bullet_train.png" class="img-fluid" style="width:45.0%" alt="El pico del martín pescador inspiró la nariz aerodinámica del tren bala."> The Kingfisher bill inspired the bullet train’s streamline nose. Image Credit: Common Kingfisher”, Shahin Olakara, licensed under CC BY 2.0 “Two Shinkosen”, Yercombe, licensed under CC BY-NC 2.0.</p>
+</div>
+</section>
+<section id="resistencia-de-materiales" class="level3">
+<h3 class="anchored" data-anchor-id="resistencia-de-materiales">Resistencia de materiales</h3>
+<p>La telaraña (ver Fig. @ref(fig:arana_rococo)) es uno de los ejemplos más emblemáticos de biomímesis aplicada al desarrollo de materiales resistentes. La seda de araña es un material natural compuesto por cadenas de proteínas organizadas en polímeros altamente resistentes. Es hasta diez veces más fuerte que los aceros más resistentes conocidos y supera en propiedades a materiales sintéticos como el Kevlar, empleado en chalecos antibalas. Además de su resistencia, la seda de araña combina flexibilidad y tenacidad, lo que le permite absorber gran cantidad de energía sin romperse. Estas propiedades hacen que la seda sea atractiva para investigación en campos como la nanotecnología, medicina (suturas y reparación de tejidos) y desarrollo de materiales ultrarresistentes y ligeros. El principal desafío, que aún persiste, es la producción escalable de seda artificial que iguale las propiedades de la natural. Sin embargo, la telaraña sigue siendo el “<strong>santo grial</strong>” de la biomímesis de materiales, inspirando continuamente nuevas líneas de investigación en ciencia de polímeros e ingeniería.</p>
+<div id="fig:arana_rococo">
+<p><img src="../figs/arana_rococo.jpg" class="img-fluid" style="width:45.0%" alt="Tejido aditivo elaborado a imagen y semejanza de la seda de araña."> Los tejidos del futuro podrían estar confeccionados con un tejido aditivo elaborado a imagen y semejanza de la seda de araña.</p>
+</div>
+</section>
+</section>
+</section>
+<section id="links-útiles" class="level1">
+<h1>Links útiles</h1>
+<section id="concepto-general" class="level2">
+<h2 class="anchored" data-anchor-id="concepto-general">Concepto general</h2>
+<ul>
+<li><a href="https://documentacion-cultura-biblioteca.blogspot.com/2020/10/biomimetica-o-biomimesis-i-parte.html">Biomimética o biomímesis. I Parte: Definición y conceptos.</a>.</li>
+<li><a href="https://documentacion-cultura-biblioteca.blogspot.com/2020/10/biomimetica-o-biomimesis-ii-parte.html">Biomimética o biomímesis. II Parte: Historia de la biomimética.</a>.</li>
+<li><a href="https://en.wikipedia.org/wiki/Biomimetics">Biomimetics Wikipedia</a>.</li>
+<li><a href="https://raed.academy/biomimesis-y-desarrollo-sostenible-un-concepto-revolucionario-para-afrontar-los-retos-vitales-de-nuestra-civilizacion/">Biomímesis y desarrollo sostenible, un concepto revolucionario para afrontar los retos vitales de nuestra civilización</a>.</li>
+<li><a href="https://ciencia.unam.mx/leer/891/biomimetica-tecnologia-que-imita-a-la-naturaleza">Biomimética: tecnología que imita a la naturaleza</a>.</li>
+<li><a href="https://www.di-conexiones.com/biomemetica-biomimicry-innovacion-inspirada-por-la-naturaleza/">Janine M. Benyus: Biomimicry, innovación inspirada por la naturaleza</a>.</li>
+<li><a href="https://www.youtube.com/watch?v=Muzfdq25Qbc">The Promise of Biomimicry: Innovation and Design Inspired by Nature.</a>.</li>
+</ul>
+</section>
+<section id="aplicaciones" class="level2">
+<h2 class="anchored" data-anchor-id="aplicaciones">Aplicaciones</h2>
+<ul>
+<li><a href="https://ehistory.osu.edu/exhibitions/biomimicry-history">Biomimicry: A History</a>.</li>
+<li><a href="https://asknature.org/innovation/high-speed-train-inspired-by-the-kingfisher/">The Shinkansen bullet train from JR-West</a>.</li>
+<li><a href="https://naukas.com/2016/11/28/cantos-de-rana-y-planificacion-de-horarios/">Cantos de rana y planificación de horarios</a>.</li>
+<li><a href="https://yorokobu.es/algoritmo-ranas/">Las ranas que ayudan a detectar problemas en Twitter o Facebook</a>.</li>
+<li><a href="https://faircompanies.com/articles/materiales-con-futuro-impresion-aditiva-de-seda-de-arana/">Materiales con futuro: ¿impresión aditiva de seda de araña?</a>.</li>
+</ul>
+</section>
+</section>
+<section id="referencias" class="level1 unnumbered">
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Referencias</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Anous2015" class="csl-entry" role="listitem">
+Anous, I. 2015. <span>“Biomimicry" Innovative Approach in Interior Design for Increased Sustainability.”</span> <em>American International Journal of Research in Formal, Applied &amp; Natural Sciences</em> 10 (1): 18–27.
+</div>
+<div id="ref-Benyus2012" class="csl-entry" role="listitem">
+Benyus, Janine M, and Ambrosio Garcı́a Leal. 2012. <em>Biom<span>ı́</span>mesis: Innovaciones Inspiradas Por La Naturaleza</em>. Tusquets.
+</div>
+<div id="ref-Hargroves2006" class="csl-entry" role="listitem">
+Hargroves, Karlson, and Michael H Smith. 2006. <span>“Innovation Inspired by Nature Biomimicry.”</span> <em>Ecos</em>, no. 129: 27–30.
+</div>
+<div id="ref-Hernandez2012" class="csl-entry" role="listitem">
+Hernández, Hugo, and Christian Blum. 2012. <span>“Distributed Graph Coloring: An Approach Based on the Calling Behavior of Japanese Tree Frogs.”</span> <em>Swarm Intelligence</em> 6 (2): 117–50.
+</div>
+<div id="ref-Hwang2015" class="csl-entry" role="listitem">
+Hwang, Jangsun, Yoon Jeong, Jeong Min Park, Kwan Hong Lee, Jong Wook Hong, and Jonghoon Choi. 2015. <span>“Biomimetics: Forecasting the Future of Science, Engineering, and Medicine.”</span> <em>International Journal of Nanomedicine</em>, 5701–13.
+</div>
+<div id="ref-Mirat2018" class="csl-entry" role="listitem">
+Mirat, Carlos Salas, César Bedoya Frutos, and José Marı́a Adell Argilés. 2018. <span>“Antonio Gaud<span>ı́</span>, Precursor de La Sostenibilidad y La Biomim<span>é</span>tica En La Arquitectura, Con 100 a<span>ñ</span>os de Antelaci<span>ó</span>n.”</span> <em>ACE: Arquitectura, Ciudad y Entorno</em>.
+</div>
+<div id="ref-Radwan2016" class="csl-entry" role="listitem">
+Radwan, Gehan AN, and Nouran Osama. 2016. <span>“Biomimicry, an Approach, for Energy Effecient Building Skin Design.”</span> <em>Procedia Environmental Sciences</em> 34: 178–89.
+</div>
+<div id="ref-Ruban2011" class="csl-entry" role="listitem">
+Ruban, Alexander V, Matthew P Johnson, and Christopher DP Duffy. 2011. <span>“Natural Light Harvesting: Principles and Environmental Trends.”</span> <em>Energy &amp; Environmental Science</em> 4 (5): 1643–50.
+</div>
+</div></section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

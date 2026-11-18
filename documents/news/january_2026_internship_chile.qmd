@@ -1,0 +1,60 @@
+---
+title: "Research Visit: University of Chile"
+author: "Martin Mendez"
+date: "2026-01-20"
+format:
+  html:
+    mathjax: true
+    embed-resources: true
+#   pdf:
+#     documentclass: article
+#     pdf-engine: pdflatex
+#     include-in-header:
+#       text: |
+#         \usepackage{amsmath}
+#         \usepackage{physics}
+---
+
+
+### Research Internship in Quantum Optics: Collaboration between Argentina and Chile 🇦🇷🇨🇱
+
+During January 2026, I had the pleasure of conducting a research internship at [the Department of Physics](https://dfi.uchile.cl/) of the University of Chile, joining the [Amazing Quantum Group](https://www.amazingquantum.com/) led by [Dr. Carla Hermann-Avigliano](https://www.amazingquantum.com/copia-de-el-equipo).
+
+My work focused on the theoretical characterization of intense non-Gaussian quantum light. We investigated generalized coherent states through quantum information measures and higher-order correlators to detect non-classicality features—a fundamental challenge in modern quantum optics.
+
+The highlights of this experience were:
+
+*Theory-Experiment Synergy*. Although my focus is theoretical, participating in the laboratories and handling cutting-edge equipment provided an invaluable perspective on the real challenges of experimental implementation.
+
+*Academic Exchange*. Participating in Journal Clubs and presenting my progress to the group was key to receiving constructive feedback and refining my quantum dynamics models.
+
+*Closing the Cycle*. I concluded the stay by presenting a [poster](../../aux/posters/poster_mendez_et_al_internship_dfi.pdf) with the results obtained during [the DFI Summer Internship 2026](https://dfi.uchile.cl/noticias/237309/cierre-practicas-de-verano-fisica-2026) closing session.
+
+I take with me not only new technical knowledge but also the experience of having shared this time with an exceptional human group, known for their warmth and helpfulness. I am deeply grateful to the Amazing Quantum Group for opening their doors to me and for the enriching discussions that will undoubtedly impact the final stage of my PhD.
+
+
+### Galería de la Estancia
+
+::: {layout-ncol=3}
+![Group photo of the poster session with all summer internship participants](figures/2026_summer_internship_chile_01.jpeg)
+
+![Panoramic view of Santiago de Chile from [San Cristóbal Hill](https://en.wikipedia.org/wiki/San_Crist%C3%B3bal_Hill)](figures/2026_summer_internship_chile_04.jpeg)
+
+![A day of intense work at the Department of Physics](figures/2026_summer_internship_chile_06.jpeg)
+
+![Poster presentation](figures/2026_summer_internship_chile_02.jpeg)
+
+![Photo with [Dr. Victor Gondret](https://www.normalesup.org/~gondret/), postdoctoral researcher at the Amazing Quantum Group](figures/2026_summer_internship_chile_03.jpeg)
+
+![Presentation at the Amazing Quantum Group Journal Club](figures/2026_summer_internship_chile_05.jpeg)
+
+![View of the interior of the Faculty of Physics, University of Chile](figures/2026_summer_internship_chile_08.jpeg)
+
+![Entrance to the Amazing Quantum Group laboratory](figures/2026_summer_internship_chile_10.jpeg)
+
+<!-- ![Otra actividad](figures/2026_summer_internship_chile_09.jpeg) -->
+<!-- ![Otra actividad](figures/2026_summer_internship_chile_07.jpeg) -->
+:::
+
+<!-- quarto render january_2026_internship_chile.qmd --to html
+quarto render january_2026_internship_chile.qmd --to pdf -->

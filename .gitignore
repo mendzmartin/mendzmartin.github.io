@@ -1,0 +1,16 @@
+vendor
+# Jekyll build output and caches
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+
+# LaTeX auxiliary files
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.out

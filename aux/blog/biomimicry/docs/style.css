@@ -1,0 +1,54 @@
+/* Local styles for Biomimicry Quarto page */
+
+:root{
+  --hero-bg: linear-gradient(135deg,#e6f4ff 0%, #f7fff6 100%);
+  --accent: #0b69ff;
+  --muted: #556067;
+}
+
+.hero{
+  background: var(--hero-bg);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0 8px 24px rgba(16,24,40,0.06);
+}
+
+.hero h1, .hero h2, .hero h3{
+  margin-top: 0;
+}
+
+.hero p{
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.quarto-toc{
+  background: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+}
+
+/* Responsive image placeholder handling */
+img{
+  max-width:100%;
+  height:auto;
+  border-radius: 6px;
+}
+
+/* Simple typographic tuning */
+h2{ color: var(--accent); }
+
+/* Columns spacing */
+.columns > .column{
+  padding: 0.5rem;
+}
+
+/* Make sure tables and code blocks are readable */
+table{ border-collapse: collapse; }
+pre{ background: #0f1724; color:#e6eef8; padding: 1rem; border-radius:6px; overflow:auto; }
+
+@media (max-width:800px){
+  .hero{ padding: 1rem; }
+}

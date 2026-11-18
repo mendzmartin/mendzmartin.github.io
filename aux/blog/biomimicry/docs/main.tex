@@ -1,0 +1,479 @@
+\documentclass[twocolumn,amsmath,amssymb,aps,floatfix]{revtex4-2}
+
+\usepackage{graphicx}   % Include figure files
+\usepackage{subcaption} % Required for subfigure
+\usepackage{dcolumn}    % Align table columns on decimal point
+\usepackage{bm}         % bold math
+\usepackage{hyperref}   % add hypertext capabilities
+
+\usepackage{bookmark}
+
+\usepackage{mathtools}
+\usepackage{physics}
+\usepackage[english]{babel}
+
+\usepackage[T1]{fontenc}
+
+% to convert webp to png make: dwebp image.webp -o image.png
+
+
+\begin{document}
+
+\title{Biomímesis: aprender observando la naturaleza.}
+\author{Martin Mendez}
+\email{martinmendez@unc.edu.ar}
+\affiliation{Facultad de Matemática, Astronomía, Física y Computación, Universidad Nacional de Córdoba and Instituto de Física Enrique Gaviola,
+CONICET-UNC, Ciudad Universitaria,Córdoba X5000HUA, Argentina}
+
+\date{\today}
+
+\maketitle
+
+\tableofcontents
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Introducción}
+\subsection{Historia y definición}
+
+El filósofo griego Aristóteles decía que para lograr sus fines, el arte imita a la naturaleza. Hoy, no sólo los artistas, sino grupos de ingenieros,
+físicos, médicos, biólogos y otros científicos están diseñando y construyendo artefactos capaces de replicar las formas y funciones naturales de los
+organismos. Los propósitos, más que estéticos, son prácticos: aprender cómo la naturaleza, a través de miles de millones de años de evolución,
+ha generado soluciones que permiten a los seres vivos adaptarse a su entorno y sobrevivir, para luego aplicar esas estrategias en beneficio
+del ser humano.
+
+El concepto de biomimicry (biomimética o biomímesis) tiene sus raíces en la observación de la naturaleza como fuente de soluciones eficientes y
+sostenibles a problemas complejos, inspirando innovaciones tecnológicas. Históricamente, el interés humano por imitar la naturaleza se remonta a
+tiempos antiguos, con ejemplos clásicos como el uso de la seda proveniente de gusanos de seda desde el 4000 a.C. (ver Fig.~\ref{fig:silks})
+y la invención del paraguas en China hace unos 1700 años, inspirado en las hojas de loto para protegerse de la lluvia (ver Fig.~\ref{fig:lotus}).
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.45\textwidth]{../figs/silks.jpg}
+   \caption{La seda es uno de los primeros ejemplos de biomímesis que se encuentran en la historia humana.
+   El uso de este material se remonta al año 4000 a.C., convirtiéndolo en una de las primeras telas inventadas
+   por el ser humano. Es bien sabido que la seda proviene de los gusanos de seda, y los chinos fueron la primera
+   civilización en aprender de este increíble gusano. Esta invención fue la razón por la cual la Ruta de la Seda
+   recibió su nombre. Durante la época en la que solo los chinos habían dominado la técnica del tejido, la seda
+   podía ser intercambiada por su peso equivalente en oro. Seis mil años después, todavía seguimos usando seda
+   en todo el mundo.}
+   \label{fig:silks}
+\end{figure}
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.45\textwidth]{../figs/lotus.jpg}
+   \caption{Los primeros paraguas chinos fueron inventados hace 1700 años por un hombre llamado Lu Ban,
+   quien ahora es venerado en la historia china. La idea del paraguas surgió cuando Lu Ban vio a niños
+   usando hojas de loto para protegerse de la lluvia. Decidió imitar la flexibilidad y efectividad de la
+   hoja para crear un producto propio. Los primeros paraguas fueron, de hecho, hechos de seda.}
+   \label{fig:lotus}
+\end{figure}
+
+El término biomímesis (del griego \textit{bios}, vida y \textit{mímesis}, imitación) fue utilizado formalmente por primera vez en 1957
+por el Otto Schmidt en el contexto de transferir teorías biológicas a soluciones tecnológicas y luego popularizado por Janine Benyus,
+quien en 1997 definió la biomimética como una ciencia nueva que estudia los modelos de la naturaleza para inspirar soluciones a problemas humanos.
+
+\noindent Existen muchas definiciones de qué es la biomímesis, en particular mostramos la siguiente propuesta por Hwang y colaboradores~\cite{Hwang2015},
+que dice lo siguiente:
+
+\begin{itshape}
+\begin{quote}
+   La biomimética es el estudio de la naturaleza y los fenómenos naturales para comprender los principios de los mecanismos subyacentes,
+   obtener ideas de la naturaleza y aplicar conceptos que puedan beneficiar a la ciencia, la ingeniería y la medicina.
+\end{quote}
+\end{itshape}
+
+\subsection{Concepto}
+
+Para entender el concepto detras de la biomímesis es útil recordar las nueve leyes, estrategias o principios en que se basa la naturaleza
+según Janine Benyus~\cite{Benyus2012}.
+
+\begin{itshape}
+\begin{quote}
+   La naturaleza...
+\begin{itemize}
+    \item [1.] ... funciona con la luz del sol.
+    \item [2.] ... sólo usa la energía que necesita.
+    \item [3.] ... adapta la forma a la función.
+    \item [4.] ... lo recicla todo.
+    \item [5.] ... recompensa la cooperación.
+    \item [6.] ... se apoya en la diversidad.
+    \item [7.] ... exige conocimientos técnicos locales.
+    \item [8.] ... frena los excesos desde el interior.
+    \item [9.] ... optimiza.
+\end{itemize}   
+\end{quote}
+\end{itshape}
+
+\noindent Antonio Gaudí (1852-1926) decía que:
+\begin{itshape}
+   \begin{quote}
+      El arquitecto del futuro se basará en la imitación de la naturaleza,
+      porque es la forma más racional, duradera y económica de todos los métodos.
+   \end{quote}
+\end{itshape}
+
+\noindent La arquitectura biomimética busca soluciones sostenibles en la naturaleza, no a través de la réplica de sus formas, sino a través de la comprensión
+de las normas y principios que las rigen. Se trataría por tanto, de imitar no solo la forma, sino también el funcionamiento.
+Gaudí expresaba la importancia de la biomimética:
+\begin{itshape}
+   \begin{quote}
+      Originalidad quiere decir volver al origen y el origen
+      es la naturaleza y las leyes que la rigen.
+   \end{quote}
+\end{itshape}
+
+\noindent Janine Benyus, afirma que~\cite{Mirat2018}:
+\begin{itshape}
+   \begin{quote}
+      El primer nivel es imitar la forma natural.
+      Pero se puede acceder a un segundo nivel, que es cuando se imita el proceso natural.
+   \end{quote}
+\end{itshape}
+
+\subsection{La biomímesis como filosofía de vida}
+
+La biomímesis estudia en profundidad el comportamiento de la naturaleza en todos
+sus estadios, escalas de relación y desarrollo en el ámbito de la biosfera y
+busca entender su lenguaje para mejorar nuestro conocimiento. El objetivo es
+crear una cultura que nos permita establecer nuevos procesos más ecológicos y
+sostenibles, así como productos y estrategias para establecer formas de progreso
+que estén en equilibrio con la integridad del planeta.
+
+La biomímesis es una ciencia basada en la observación de nuestro planeta y de
+su larga evolución durante sus 3.800 millones de años de historia. Las moléculas
+orgánicas de los organismos biológicos de microbios, animales, plantas y hongos
+y de sus asociaciones han establecido estrategias de supervivencia capaces de
+subsistir gracias a la optimización del uso de recursos, de su organización y
+funcionamiento y, de adaptar su forma a su función.
+
+Janine Benyus decía que:
+
+\begin{itshape}
+   \begin{quote}
+      La naturaleza ya ha resuelto todos los retos a
+      los que hoy nos enfrentamos y, sus fracasos se han convertido en fósiles, y lo
+      que nos rodea es la clave de la supervivencia
+   \end{quote}
+\end{itshape}
+
+Existen tres elementos esenciales en la ciencia de la biomímesis que son emular,
+ethos y (re)conectar y representan los valores fundamentales en los que se basa
+la biomímesis y que pretende transmitir en todas sus acciones y prácticas.
+
+\begin{itemize}
+   \item Emular: La experiencia científica basada en la investigación de aprender
+   y luego replicar las formas, procesos y ecosistemas de la naturaleza para crear
+   diseños más regenerativos.
+   \item Ethos: La filosofía de comprender cómo funciona la naturaleza y crear
+   diseños que apoyen y creen continuamente resultados propicios para la vida.
+   \item (Re) Conectar: El concepto de que todos somos parte de la naturaleza y
+   encontramos valor en el reconocimiento de los sistemas interconectados de la
+   vida. (Re)Conectar como práctica nos anima a observar y pasar tiempo en la
+   naturaleza, a comprender cómo estamos profundamente conectados con ella, a
+   experimentar nuestra interdependencia y a apreciar cómo funciona la vida y
+   sus estrategias biológicas.
+\end{itemize}
+
+%%%
+
+% Hasta medidados de los 80' no sabíamos cómo funcionaba la fotosíntesis y aún continuamos sin saberlo. La razón principal es que la fotosíntesis difiere
+% de cómo funciona una célula fotovoltaica. En una célula fotovoltaica, la luz incide sobre un material semiconductor y genera pares electrón-hueco que
+% se separan y generan una corriente eléctrica. En la fotosíntesis, la luz es absorbida por pigmentos (como la clorofila) que excitan electrones a un
+% estado de mayor energía. Estos electrones son transferidos a través de una serie de proteínas en la membrana tilacoide del cloroplasto, lo que
+% finalmente conduce a la producción de ATP y NADPH, que son utilizados en el ciclo de Calvin para sintetizar glucosa.
+
+% Los biólogos y físicos estudian a fondo el comportamiento de una hoja, pero los ingenieros sólo preguntan qué tan eficiente es. Y la realidad es que
+% las hojas son mucho más eficientes que las células solares. Una hoja típica convierte alrededor del 1-2\% de la energía solar en energía química
+% utilizable, mientras que las células solares comerciales tienen eficiencias que varían entre el 15\% y el 22\%. Sin embargo, las hojas tienen la
+% capacidad de auto-repararse, crecer y adaptarse a diferentes condiciones ambientales, lo que las hace extremadamente eficientes en términos de uso
+% de recursos y sostenibilidad a largo plazo. La hoja además de transformar luz en energía, desarrolla mecanimos contra las plagas, posee un sistema de circulación de fluidos eficiente.
+% De hecho, cuando hay mucho viento las hojas se retuerce sobre su propio eje, diminuyendo el area transversal y así reduciendo la resistencia
+% contra el aire.
+
+% La biomímesis es algo de lo cual no podemos escapar, la naturaleza está ahí, es el mismo universo revelandonos cómo resolvió problemas de forma
+% eficiente y armoniosa con el resto de organizmos y ecosistemas.
+
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.45\textwidth]{../figs/pulpo_molusco_cefalopodo.png}
+   \caption{La evolución anatómica de los pulpos (molusco cefalópodo) con su cuerpo musculoso y flexible de 8 brazos tentaculados, cerebro prodigioso
+   y un sistema ocular de los más evolucionados del reino animal, es un milagro de la naturaleza y de la adaptación al medio marino. La biomimética
+   estudia la forma y funcionamiento de sus ventosas para aplicaciones médicas e industriales, así como el sistema de visión para la aplicación en
+   tecnología marina e invidentes. Foto: Miquel Ventura Monsó --- Proyecto Silmar --- Fundación RAED.}
+   \label{fig:pulpo_molusco_cefalopodo}
+\end{figure}
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.45\textwidth]{../figs/gusano_poliqueto.png}
+   \caption{El gusano poliqueto de la especie Spirographis spallanzani ha evolucionado hasta adquirir un diseño corporal y fisiológico que le permite,
+   gracias a la modificación de sus apéndices, desarrollar un abanico en forma de plumero para captar el oxígeno del agua y a su vez alimentarse de
+   las partículas en suspensión que transporta el agua marina. Foto: Miquel Ventura Monsó – proyecto Silmar – Fundación RAED.}
+   \label{fig:gusano_poliqueto}
+\end{figure}
+
+
+\section{Personas relevantes}
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Uno de los pioneros en el pensamiento biomimético fue Leonardo da Vinci (1452-1519), quien estudió y replicó mecanismos naturales como el vuelo de las
+aves para diseñar máquinas voladoras, sentando bases para la biónica (ver Fig.~\ref{fig:flying_machine_davinci}).
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.45\textwidth]{../figs/flying_machine_davinci.jpg}
+   \caption{Leonardo da Vinci's design for a flying machine with wings based closely upon the structure of bat wings.}
+   \label{fig:flying_machine_davinci}
+\end{figure}
+
+El arquitecto catalán Antonio Gaudí (1852-1926), pionero en la aplicación intuitiva de principios biomiméticos, concibió la estructura
+de la Sagrada Familia en Barcelona como un gran bosque pétreo. Lejos de ser meros elementos decorativos, las columnas
+que se ramifican como troncos de árboles, las bóvedas que recuerdan hojas, y las espirales inspiradas en caracoles
+fueron diseñadas con una profunda intención estructural y funcional. Esta aproximación orgánica permite una distribución
+óptima de las cargas gravitatorias hacia el suelo, imitando la eficiencia de los sistemas naturales. Asimismo, estas formas,
+probadas durante más de un siglo contra la tramontana y las inclemencias del clima mediterráneo, confieren al edificio una
+excepcional resistencia y estabilidad frente a las fuerzas del viento. La obra de Gaudí es, por tanto, un testimonio temprano
+y monumental de cómo la mimesis de las formas y estrategias de la naturaleza puede generar estructuras no solo estéticamente
+sorprendentes, sino también extraordinariamente eficientes y resilientes (ver Fig.~\ref{fig:sagrada_familia})~\cite{Anous2015}.
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.45\textwidth]{../figs/sagrada_familia.jpeg}
+   \caption{La Sagrada Familia aún en construcción.}
+   \label{fig:sagrada_familia}
+\end{figure}
+
+El biofísico Otto H. Schmitt (1913-1998) acuñó el término "biomimética" en la década de 1950 para describir la transferencia de ideas de la biología
+a la tecnología. Su trabajo se centró en transferir fenómenos biológicos, como la transmisión de señales en nervios, a aplicaciones de
+ingeniería electrónica, como el disparador de Schmitt.
+
+George de Mestral (1907-1990), aunque fue un inventor, su descubrimiento más famoso es el caso de éxito de biomímesis por excelencia:
+el Velcro (ver Fig.~\ref{fig:velcro}). Inspirado por los ganchos de los frutos del cardo alpino (Arctium), democratizó el concepto de que la
+naturaleza ofrece soluciones elegantes a problemas simples.
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.45\textwidth]{../figs/velcro.png}
+   \caption{Mientras cazaba en los Alpes suizos con su perro, George de
+   Mestral notó que los cadillos (o ``abrojos'') del bosque se pegaban a su ropa
+   y al pelaje de su perro. Aunque era un inconveniente, él lo vio como una
+   oportunidad. Tras examinar los cadillos más de cerca, observó que su
+   superficie estaba compuesta por muchos ganchos diminutos. Estos se adhieren a
+   las cosas enredando estos ganchos en la estructura suelta de superficies como
+   la tela o la piel animal. Inventó el Velcro imitando esta
+   superficie cubierta de pequeños ganchos y combinándola con una superficie
+   cubierta de pequeños bucles, dando como resultado el producto útil que
+   conocemos hoy en día.}
+   \label{fig:velcro}
+\end{figure}
+
+Claus Mattheck (1947-presente) es un gigante en el campo de la biónica estructural. Desarrolló el "método de optimización de la tensión superficial"
+y demostró cómo los árboles optimizan su forma para soportar cargas, principios que luego aplicó para diseñar componentes
+más ligeros y resistentes en la industria automotriz y aeroespacial.
+
+Janine Benyus (1958) en 1997 es conocida como la fundadora del movimiento de biomímesis. Ella recogió todas sus teorías en un libro llamado
+"Biomimesis: innovaciones inspiradas por la naturaleza"~\cite{Benyus2012} (ver Fig.~\ref{fig:janine_benyus_book}).
+En 1998, Janine Benyus y Dayna Baumeister fundaron la biomímesis,
+que utiliza un profundo conocimiento de la adaptación biológica de los organismos para ayudar a los diseñadores, ingenieros y arquitectos a resolver
+problemas de diseño e ingeniería de manera sostenible. En 2008, se desarrolla el “portal de biomímesis”, que es la primera base de datos digital para
+organismos biológicos que tienen estrategias para resolver problemas acordes con la comunidad humanitaria~\cite{Anous2015}.
+En 2005, Bryony Schan y Janine Benyus cofundaron el \href{https://biomimicry.org/}{Instituto de Biomímesis}, en 2007 Chris Allen se unió a Beynus
+y Schwan para lanzar \href{https://asknature.org/}{"AskNature"}, primera biblioteca digital del mundo que contiene una lista de soluciones naturales
+donde los diseñadores pueden buscar a través de esta colección de sistemas naturales, clasificados según
+su diseño e ingeniería~\cite{Radwan2016}. Janine Benyus está considerada como una de las personas clave responsables de desarrollar el campo
+de la biomimética en un área más reconocida y distinguida hoy en día. Fundó su propia organización de consultoría líder en el mundo,
+Biomimética 3.8. Su misión es enseñar al mundo a innovar, aprender e inspirarse en la naturaleza. Ella continúa esforzándose por un futuro que escuche
+a la tierra en lugar de explotarla. Ella enmarca el concepto de biomimética en torno al urgente objetivo de acabar con la destrucción
+del medio ambiente. Dijo en el National Geographic, "Ojalá hubiéramos estado en la mesa de diseño de la Revolución Industrial".
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.2\textwidth]{../figs/janine_benyus_book.jpg}
+   \caption{Portada del libro escrito por Janine Benyus “Biomímesis. Innovaciones inspiradas por la naturaleza”~\cite{Benyus2012}.}
+   \label{fig:janine_benyus_book}
+\end{figure}
+
+En sus inicios, Baumeister y Benyus se plantearon la cuestión fundamental de cómo sentar las bases de una disciplina emergente:
+por dónde empezar y cómo construir las instituciones necesarias. Llegaron a la conclusión de que el objetivo último era canalizar
+la sabiduría de la naturaleza e integrarla en el ámbito del diseño de sistemas humanos, abarcando la ingeniería, la medicina,
+la política, el arte, entre otros. Para ello, era crucial crear un marco de trabajo que conectara de manera eficaz las soluciones
+desarrolladas por la naturaleza con los desafíos humanos. La genialidad de su propuesta fue simplificar este proceso en una pregunta
+esencial: "¿Cómo lo resolvería la naturaleza?" (What would nature do?). Sin embargo, para que esta pregunta fuera útil, debía tener
+una respuesta accesible. Así nació \href{https://asknature.org/}{AskNature}.
+
+La paradoja que impulsó este proyecto es la siguiente: los profesionales que diseñan nuestro mundo (ingenieros, arquitectos,
+diseñadores) rara vez reciben formación en biología. Sin embargo, son ellos quienes crean las tecnologías y soluciones que moldean
+nuestra existencia. Por ejemplo, un ingeniero puede diseñar una bomba hidráulica compleja para un motor de combustión, sin conocer
+que la naturaleza ha perfeccionado un sistema de bombeo extraordinariamente eficiente en el corazón de una ballena, capaz de mover
+sangre a través de una vasta red de vasos. Los biólogos conocen estos sistemas, pero su conocimiento no suele llegar a los creadores.
+AskNature surge precisamente para tender un puente entre estos dos saberes, conectando la expertise biológica con la ingenieril en
+el momento mismo de la creación
+
+
+% +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Ejemplos destacados}
+
+\subsection{Matemática}
+
+\subsubsection{Grafos}
+
+En el 2012 se publicó un trabajo científico (ver Ref.~\cite{Hernandez2012}) que se inspira en el comportamiento
+natural de los machos de la rana arborícola japonesa (Hyla japonica, ver Fig.~\ref{fig:japanese_tree_frog}),
+que emiten sus cantos para atraer a las hembras. Cuando varios machos están cerca
+y cantan simultáneamente, las hembras no pueden distinguir de dónde provienen las llamadas, lo que dificulta la elección del compañero. Para solucionar
+esto, los machos desincronizan sus cantos, es decir, ajustan los intervalos temporales de sus llamados para que no se superpongan, facilitando que las
+hembras localicen individualmente a cada macho.
+
+Este fenómeno natural de desincronización se ha modelado matemáticamente mediante sistemas de osciladores acoplados, donde cada macho se representa
+como un nodo en un grafo, y las conexiones entre nodos reflejan la posibilidad de confusión entre cantos debido a la proximidad. El algoritmo
+desarrollado usa esta idea de desincronización para resolver el problema del coloreado distribuido de grafos, que consiste en asignar colores a nodos
+conectados de modo que nodos vecinos tengan colores diferentes. Cada fase de canto corresponde a un color, y al desincronizarse, los nodos logran
+minimizar el número de colores usados sin que se superpongan, equivalente a permitir conexiones inalámbricas sin interferencias o gestionar tareas en
+redes distribuidas sin coordinación central.
+
+Este algoritmo bioinspirado es distribuido, lo que significa que cada nodo usa solo información local para decidir su color, imitando cómo los machos
+ranas ajustan sus cantos sin un controlador central. El método ha mostrado resultados competitivos para diversos tipos de grafos, siendo útil en
+aplicaciones concretas como asignación de frecuencias en redes inalámbricas, planificación de horarios o análisis de redes sociales para detectar
+comunidades independientes.
+
+En resumen, el estudio aprovecha la autoorganización natural de la desincronización en los cantos de las ranas arborícolas japonesas para diseñar un
+algoritmo eficiente y distribuido que soluciona combinatoriamente problemas complejos de coloreado en grafos, con amplias aplicaciones tecnológicas y
+computacionales.
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.45\textwidth]{../figs/japanese_tree_frog.png}
+   \caption{Durante los rituales de cortejo, las ranas macho japonesas
+   (Dryophytes japonicus) atraen la atención de las hembras croando rítmicamente.
+   Los machos vecinos tienden a alternar sus croaking (con una diferencia de
+   fase) para evitar "hablar unos sobre otros" e interferir acústicamente}
+   \label{fig:japanese_tree_frog}
+\end{figure}
+
+\subsection{Física}
+
+\subsubsection{Fotosíntesis}
+
+El trabajo de Ruban, Johnson y Duffy (2011)~\cite{Ruban2011} nos ofrece un ejemplo paradigmático de eficiencia energética inspirada
+por la naturaleza. Su estudio detallado de la antena del fotosistema II en plantas revela un sistema de captura de luz con una
+eficiencia cuántica casi perfecta (80-100\%), un estándar asombroso que cualquier tecnología humana aspira alcanzar.
+
+Esta prodigiosa eficiencia no es casual, sino que emerge de un diseño molecular exquisito. Los pigmentos y proteínas se organizan
+formando lo que los autores describen como un "solvente programado", que logra empacar una alta densidad de pigmentos sin que estos
+se "apaguen" entre sí. Esto se consigue gracias a orientaciones y acoplamientos precisos que prolongan la vida del estado excitado.
+
+El sistema es, además, dinámicamente inteligente. Pigmentos accesorios, las xantofilas, actúan como reguladores en tiempo real,
+modulando la eficiencia energética para proteger el sistema y adaptarse a las condiciones de luz. Incluso exhibe una suerte de
+"memoria lumínica", con un comportamiento histérico similar al de materiales ferroeléctricos, lo que le permite "recordar"
+exposiciones previas.
+
+Como modelo biomimético, este sistema biológico es una lección magistral de integración de fenómenos cuánticos, bioquímicos y
+físicos para lograr una función robusta y autoregulada. Sus principios—optimización del diseño, regulación adaptativa y explotación
+de efectos cuánticos—ofrecen un blueprint revolucionario para el diseño de nuevos materiales fotónicos, células solares orgánicas y
+sistemas de gestión de energía artificiales mucho más eficientes.
+
+
+% https://asknature.org/strategy/electron-flow-generates-heat/
+% https://asknature.org/strategy/organisms-capture-radiation/
+
+\subsection{Ingeniería}
+
+\subsubsection{Adhesivo}
+
+Los científicos de la Universidad de Manchester han desarrollado un nuevo tipo de adhesivo que imita el mecanismo empleado por el lagarto gecko
+(ver Fig.~\ref{fig:gecko_renee}) para adherirse a superficies e incluso caminar por techos de cristal. Este innovador material,
+a menudo llamado cinta de gecko, está compuesto
+por miles de millones de pequeñas fibras de plástico de menos de una micra de diámetro. Estas fibras sintéticas son análogas a los pelos
+microscópicos (setae) que recubren las plantas de los pies del gecko, los cuales generan fuerzas de adhesión electrodinámicas
+(fuerzas de van der Waals) a nivel molecular. Sorprendentemente, un centímetro cuadrado de esta cinta es capaz de soportar un peso de hasta un
+kilogramo. Más allá de sus aplicaciones como adhesivo general, este material puede ser utilizado para manipular chips de computadora en entornos
+de vacío o para recolectar muestras de pequeñas fibras sin dañarlas. Otra de sus ventajas significativas es que la cinta es reutilizable y no
+requiere de los productos químicos tóxicos presentes en los adhesivos convencionales~\cite{Hargroves2006}.
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.45\textwidth]{../figs/gecko_renee.png}
+   \caption{Ingenieros y estudiantes de la Universidad de Massachusetts
+   estudiaron las almohadillas de las patas de los geckos y descubrieron
+   que la razón por la que estos reptiles pueden arrastrarse por superficies
+   verticales e incluso invertidas se debe a que sus pies están cubiertos por
+   cientos de setae, es decir, fibras microscópicas similares a pelos. Estas
+   fibras permiten al gecko adherirse a una superficie, pero también despegarse
+   de ella con facilidad. El resultado de esta investigación fue el desarrollo
+   de una sustancia adhesiva que, como era de esperar, se utiliza para adherir
+   objetos a paredes y superficies de manera más eficiente.}
+   \label{fig:gecko_renee}
+\end{figure}
+
+\subsubsection{Ondas de choque}
+
+Para resolver el problema de los cambios bruscos de resistencia del aire y el estruendo sónico que generaban
+los trenes Shinkansen al entrar en los túneles, el equipo de diseño se inspiró en la naturaleza. Encontraron
+la solución perfecta en el pico del martín pescador (Alcedo atthis), evolucionado para bucear desde el aire
+al agua, es decir, de un medio de baja densidad a uno de alta densidad, con una pérdida mínima de energía y
+sin salpicadura. Mediante modelado por computadora, los ingenieros confirmaron que la forma aerodinámica
+única del pico del ave era la más idónea para el morro del tren. El resultado fue extraordinario: no solo se
+eliminó casi por completo el ruido de la onda de choque en los túneles, sino que, además, el tren pudo circular
+un 10\% más rápido consumiendo un 15\% menos de electricidad. Este caso es un paradigma de cómo la biomímesis
+puede optimizar múltiples parámetros de rendimiento de manera simultánea e inteligente
+(ver Fig.~\ref{fig:kingfisher_inspired_bullet_train})~\cite{Hargroves2006}.
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.45\textwidth]{../figs/kingfisher_inspired_bullet_train.png}
+   \caption{The Kingfisher bill inspired the bullet train’s streamline nose. Image Credit: Common Kingfisher”, Shahin Olakara,
+   licensed under CC BY 2.0 “Two Shinkosen”, Yercombe, licensed under CC BY-NC 2.0}
+   \label{fig:kingfisher_inspired_bullet_train}
+\end{figure}
+
+\subsubsection{Resistencia de materiales}
+
+La telaraña (ver Fig.~\ref{fig:arana_rococo}) es uno de los ejemplos más emblemáticos de biomímesis aplicada al desarrollo de materiales resistentes.
+La seda de araña es un material natural compuesto por cadenas de proteínas organizadas en polímeros altamente resistentes.
+Es hasta diez veces más fuerte que los aceros más resistentes conocidos y supera en propiedades a materiales sintéticos
+como el Kevlar, empleado en chalecos antibalas.
+
+Además de su resistencia, la seda de araña combina flexibilidad y tenacidad, lo que le permite absorber gran cantidad
+de energía sin romperse. Estas propiedades hacen que la seda sea atractiva para investigación en campos como la nanotecnología,
+medicina (suturas y reparación de tejidos) y desarrollo de materiales ultrarresistentes y ligeros.
+
+El principal desafío, que aún persiste, es la producción escalable de seda
+artificial que iguale las propiedades de la natural. Sin embargo, la telaraña
+sigue siendo el "santo grial" de la biomímesis de materiales, inspirando
+continuamente nuevas líneas de investigación en ciencia de polímeros e
+ingeniería.
+
+\begin{figure}[!htbp]
+   \centering
+   \includegraphics[width=0.45\textwidth]{../figs/arana_rococo.jpg}
+   \caption{Los tejidos del futuro podrían estar confeccionados con un tejido aditivo
+elaborado a imagen y semejanza de la seda de araña}
+   \label{fig:arana_rococo}
+\end{figure}
+
+\section{Links útiles}
+\subsection{Concepto general}
+\begin{itemize}
+   \item \href{https://documentacion-cultura-biblioteca.blogspot.com/2020/10/biomimetica-o-biomimesis-i-parte.html}{Biomimética o biomímesis. I Parte: Definición y conceptos.}
+   \item \href{https://documentacion-cultura-biblioteca.blogspot.com/2020/10/biomimetica-o-biomimesis-ii-parte.html}{Biomimética o biomímesis. II Parte: Historia de la biomimética.}
+   \item \href{https://en.wikipedia.org/wiki/Biomimetics}{Biomimetics Wikipedia}
+   \item \href{https://raed.academy/biomimesis-y-desarrollo-sostenible-un-concepto-revolucionario-para-afrontar-los-retos-vitales-de-nuestra-civilizacion/}{Biomímesis y desarrollo sostenible, un concepto revolucionario para afrontar los retos vitales de nuestra civilización}
+   \item \href{https://ciencia.unam.mx/leer/891/biomimetica-tecnologia-que-imita-a-la-naturaleza}{Biomimética: tecnología que imita a la naturaleza}
+   \item \href{https://www.di-conexiones.com/biomemetica-biomimicry-innovacion-inspirada-por-la-naturaleza/}{Janine M. Benyus: Biomimicry, innovación inspirada por la naturaleza}
+   \item \href{https://www.youtube.com/watch?v=Muzfdq25Qbc}{The Promise of Biomimicry: Innovation and Design Inspired by Nature.}
+\end{itemize}
+
+\subsection{Aplicaciones}
+\begin{itemize}
+   \item \href{https://ehistory.osu.edu/exhibitions/biomimicry-history}{Biomimicry: A History}
+   \item \href{https://asknature.org/innovation/high-speed-train-inspired-by-the-kingfisher/}{The Shinkansen bullet train from JR-West}
+   \item \href{https://naukas.com/2016/11/28/cantos-de-rana-y-planificacion-de-horarios/}{Cantos de rana y planificación de horarios}
+   \item \href{https://yorokobu.es/algoritmo-ranas/}{Las ranas que ayudan a detectar problemas en Twitter o Facebook}
+   \item \href{https://faircompanies.com/articles/materiales-con-futuro-impresion-aditiva-de-seda-de-arana/}{Materiales con futuro: ¿impresión aditiva de seda de araña?}
+\end{itemize}
+
+\bibliography{bibliography}
+
+\end{document}
