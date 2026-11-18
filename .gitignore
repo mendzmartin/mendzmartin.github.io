@@ -1,4 +1,4 @@
-vendor
+/vendor/
 # Jekyll build output and caches
 _site/
 .sass-cache/
